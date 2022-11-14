@@ -88,7 +88,7 @@ public class AllTasks {
     }
 
     // Task 1 ----------------------------------------------------------------------------------------------------------
-
+    // Formats and returns a string so that each line contains no more than k characters, not counting spaces
     public static String essay(int n, int k, String str){
         String[] words = str.split(" ");
         int current_string_length = 0;
@@ -119,7 +119,8 @@ public class AllTasks {
     }
 
     // Task 2 ----------------------------------------------------------------------------------------------------------
-
+    // Groups a string into a cluster of brackets
+    // "(()())()()" => "(()())" "()" "()"
     public static String[] split(String str) {
         char[] str_char = str.toCharArray();
 
@@ -148,7 +149,7 @@ public class AllTasks {
     }
 
     // Task 3 ----------------------------------------------------------------------------------------------------------
-
+    // Formats and returns string toCamelCase
     public static String toCamelCase(String str) {
         char[] str_char = str.toCharArray();
         String answer = "";
@@ -167,6 +168,7 @@ public class AllTasks {
         return answer;
     }
 
+    // Formats and returns string to_snake_case
     public static String toSnakeCase(String str) {
         char[] str_char = str.toCharArray();
         String answer = "";
@@ -183,7 +185,7 @@ public class AllTasks {
     }
 
     // Task 4 ----------------------------------------------------------------------------------------------------------
-
+    // Returns the payment to the employee, taking into account the additional workload
     public static String overTime(double[] arr) {
 
         double time_start = arr[0];
@@ -223,7 +225,7 @@ public class AllTasks {
     }
 
     // Task 5 ----------------------------------------------------------------------------------------------------------
-
+    // Returns BMI by weight and height
     public static String BMI(String weight, String height) {
         char[] weight_char = weight.toCharArray();
         char[] height_char = height.toCharArray();
@@ -270,7 +272,7 @@ public class AllTasks {
     }
 
     // Task 6 ----------------------------------------------------------------------------------------------------------
-
+    // Returns the multiplicative constancy of a number
     public static int bugger(int number) {
         char[] number_char = Integer.toString(number).toCharArray();
 
@@ -290,7 +292,7 @@ public class AllTasks {
     }
 
     // Task 7 ----------------------------------------------------------------------------------------------------------
-
+    // Converts and returns a string to star shorthand
     public static String toStarShorthand(String str) {
 
         if (str.length() == 0) { return ""; }
@@ -324,7 +326,7 @@ public class AllTasks {
     }
 
     // Task 8 ----------------------------------------------------------------------------------------------------------
-
+    // Returns true if all vowels in last words of strings are same
     public static boolean doesRhyme(String str1, String str2) {
         char[] word1 = str1.split(" ")[str1.split(" ").length - 1].toCharArray();
         char[] word2 = str2.split(" ")[str2.split(" ").length - 1].toCharArray();
@@ -364,7 +366,9 @@ public class AllTasks {
     }
 
     // Task 9 ----------------------------------------------------------------------------------------------------------
-
+    // Takes two integers and returns true if
+    // the number is repeated three times in a row anywhere in num1 and the same number
+    // repeated twice in a row in num2
     public static boolean trouble(long number1, long number2) {
         char[] number1_char = Long.toString(number1).toCharArray();
         char[] number2_char = Long.toString(number2).toCharArray();
@@ -418,7 +422,7 @@ public class AllTasks {
     }
 
     // Task 10 ---------------------------------------------------------------------------------------------------------
-
+    // Returns amount of all unique characters between bookends
     public static int countUniqueBooks(String str, char book_end) {
         char[] str_char = str.toCharArray();
 
